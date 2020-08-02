@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.0.0)
-project(Hw1 VERSION 0.0.1$ENV{TRAVIS_BUILD_NUMBER})
+project(Hw1 VERSION 0.0.$ENV{TRAVIS_BUILD_NUMBER})
 
 set(PROJ_BUILD_NUMBER ${Hw1_VERSION_PATCH})
 configure_file(config.h.in ${PROJECT_SOURCE_DIR}/config.h)
