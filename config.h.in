@@ -1,0 +1,3 @@
+#pragma once
+
+#cmakedefine PROJ_BUILD_NUMBER "@PROJ_BUILD_NUMBER@"
