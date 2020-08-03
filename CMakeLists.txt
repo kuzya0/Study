@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.0.0)
-project(Homework VERSION 0.0.${TRAVIS_BUILD_NUMBER})
+project(Homework VERSION 0.0.$ENV{TRAVIS_BUILD_NUMBER})
 
-set(PROJ_BUILD_NUMBER ${Hw1_VERSION_PATCH})
+set(PROJ_BUILD_NUMBER ${Homework_VERSION_PATCH})
 configure_file(config.h.in ${PROJECT_SOURCE_DIR}/config.h)
 
 add_executable(Hw1 main.cpp)
