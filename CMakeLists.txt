@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.0.0)
-project(Hw1 VERSION 0.0.$ENV{TRAVIS_BUILD_NUMBER})
+project(Homework VERSION 0.0.${TRAVIS_BUILD_NUMBER})
 
 set(PROJ_BUILD_NUMBER ${Hw1_VERSION_PATCH})
 configure_file(config.h.in ${PROJECT_SOURCE_DIR}/config.h)
@@ -15,6 +15,8 @@ set_target_properties(Hw1 PROPERTIES
 )
 install(TARGETS Hw1 RUNTIME DESTINATION bin)
 
+
+# для сборки пакета Deb
 set(CPACK_GENERATOR DEB)
 
 set(CPACK_PACKAGE_VERSION_MAJOR "${PROJECT_VERSION_MAJOR}")
